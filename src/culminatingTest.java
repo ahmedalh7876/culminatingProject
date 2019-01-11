@@ -51,6 +51,7 @@ public class culminatingTest extends javax.swing.JFrame {
         classLbl19 = new javax.swing.JLabel();
         classLbl20 = new javax.swing.JLabel();
         classLbl21 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -160,6 +161,10 @@ public class culminatingTest extends javax.swing.JFrame {
         classLbl21.setForeground(new java.awt.Color(0, 51, 51));
         classLbl21.setText("0");
 
+        jButton1.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 51, 51));
+        jButton1.setText("Compare guns");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -184,7 +189,8 @@ public class culminatingTest extends javax.swing.JFrame {
                             .addComponent(wpnKawardLbl)
                             .addComponent(titleLbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(clipSizeLbl)
-                            .addComponent(clipSizeLbl1)))
+                            .addComponent(clipSizeLbl1)
+                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(72, 72, 72)
                         .addComponent(avgClassLbl)))
@@ -236,7 +242,6 @@ public class culminatingTest extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(wpnKawardLbl)
                             .addComponent(classLbl8))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(29, 29, 29)
@@ -261,7 +266,9 @@ public class culminatingTest extends javax.swing.JFrame {
                         .addComponent(classLbl16)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(classLbl15)))
-                .addContainerGap(31, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -340,6 +347,7 @@ public class culminatingTest extends javax.swing.JFrame {
     private javax.swing.JLabel classLbl9;
     private javax.swing.JLabel clipSizeLbl;
     private javax.swing.JLabel clipSizeLbl1;
+    private javax.swing.JButton jButton1;
     private javax.swing.JComboBox jComboBox1;
     private javax.swing.JComboBox jComboBox3;
     private javax.swing.JPanel jPanel1;
