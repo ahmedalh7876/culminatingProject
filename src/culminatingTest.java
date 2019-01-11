@@ -66,7 +66,7 @@ public class culminatingTest extends javax.swing.JFrame {
         });
 
         jComboBox3.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Weapon 2" }));
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Weapon 2", "Weapon 3", "waefuialhsdfiushf" }));
         jComboBox3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox3ActionPerformed(evt);
