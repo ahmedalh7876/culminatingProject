@@ -1,3 +1,6 @@
+
+import java.io.*;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -52,22 +55,22 @@ public class culminatingTest extends javax.swing.JFrame {
         kAward2OPLbl = new javax.swing.JLabel();
         clipSize2OPLbl = new javax.swing.JLabel();
         resAmmo2OPLbl = new javax.swing.JLabel();
-        wepList1CB1 = new javax.swing.JComboBox();
-        class1OPLbl1 = new javax.swing.JLabel();
-        avgClass1OPLbl1 = new javax.swing.JLabel();
-        wepDmg1OPLbl1 = new javax.swing.JLabel();
-        wepPrice1OPLbl1 = new javax.swing.JLabel();
-        kAward1OPLbl1 = new javax.swing.JLabel();
-        clipSize1OPLbl1 = new javax.swing.JLabel();
-        resAmmo1OPLbl1 = new javax.swing.JLabel();
-        wepList2CB1 = new javax.swing.JComboBox();
-        class2OPLbl1 = new javax.swing.JLabel();
-        avgClass2OPLbl1 = new javax.swing.JLabel();
-        wepDmg2OPLbl1 = new javax.swing.JLabel();
-        wepPrice2OPLbl1 = new javax.swing.JLabel();
-        kAward2OPLbl1 = new javax.swing.JLabel();
-        clipSize2OPLbl1 = new javax.swing.JLabel();
-        resAmmo2OPLbl1 = new javax.swing.JLabel();
+        wepList3CB = new javax.swing.JComboBox();
+        class3OPLbl = new javax.swing.JLabel();
+        avgClass3OPLbl = new javax.swing.JLabel();
+        wepDmg3OPLbl = new javax.swing.JLabel();
+        wepPrice3OPLbl = new javax.swing.JLabel();
+        kAward3OPLbl = new javax.swing.JLabel();
+        clipSize3OPLbl = new javax.swing.JLabel();
+        resAmmo3OPLbl = new javax.swing.JLabel();
+        wepList4CB = new javax.swing.JComboBox();
+        class4OPLbl = new javax.swing.JLabel();
+        avgClass4OPLbl = new javax.swing.JLabel();
+        wepDmg4OPLbl = new javax.swing.JLabel();
+        wepPrice4OPLbl = new javax.swing.JLabel();
+        kAward4OPLbl = new javax.swing.JLabel();
+        clipSize4OPLbl = new javax.swing.JLabel();
+        resAmmo4OPLbl = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -107,7 +110,12 @@ public class culminatingTest extends javax.swing.JFrame {
 
         cmprGunsLbl.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
         cmprGunsLbl.setForeground(new java.awt.Color(0, 51, 51));
-        cmprGunsLbl.setText("Compare guns");
+        cmprGunsLbl.setText("Compare items");
+        cmprGunsLbl.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmprGunsLblActionPerformed(evt);
+            }
+        });
 
         wepList1CB.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
         wepList1CB.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Weapon 1", "Nova", "P250", "MP7", "AK-47", "AUG", "SGG 553", "Negev" }));
@@ -181,77 +189,77 @@ public class culminatingTest extends javax.swing.JFrame {
         resAmmo2OPLbl.setForeground(new java.awt.Color(0, 51, 51));
         resAmmo2OPLbl.setText("0");
 
-        wepList1CB1.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        wepList1CB1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Weapon 3" }));
-        wepList1CB1.addActionListener(new java.awt.event.ActionListener() {
+        wepList3CB.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
+        wepList3CB.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Weapon 3", "Nova", "P250", "MP7", "AK-47", "AUG", "SGG 553", "Negev" }));
+        wepList3CB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                wepList1CB1ActionPerformed(evt);
+                wepList3CBActionPerformed(evt);
             }
         });
 
-        class1OPLbl1.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        class1OPLbl1.setForeground(new java.awt.Color(0, 51, 51));
-        class1OPLbl1.setText("0");
+        class3OPLbl.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        class3OPLbl.setForeground(new java.awt.Color(0, 51, 51));
+        class3OPLbl.setText("0");
 
-        avgClass1OPLbl1.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        avgClass1OPLbl1.setForeground(new java.awt.Color(0, 51, 51));
-        avgClass1OPLbl1.setText("0");
+        avgClass3OPLbl.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        avgClass3OPLbl.setForeground(new java.awt.Color(0, 51, 51));
+        avgClass3OPLbl.setText("0");
 
-        wepDmg1OPLbl1.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        wepDmg1OPLbl1.setForeground(new java.awt.Color(0, 51, 51));
-        wepDmg1OPLbl1.setText("0");
+        wepDmg3OPLbl.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        wepDmg3OPLbl.setForeground(new java.awt.Color(0, 51, 51));
+        wepDmg3OPLbl.setText("0");
 
-        wepPrice1OPLbl1.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        wepPrice1OPLbl1.setForeground(new java.awt.Color(0, 51, 51));
-        wepPrice1OPLbl1.setText("0");
+        wepPrice3OPLbl.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        wepPrice3OPLbl.setForeground(new java.awt.Color(0, 51, 51));
+        wepPrice3OPLbl.setText("0");
 
-        kAward1OPLbl1.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        kAward1OPLbl1.setForeground(new java.awt.Color(0, 51, 51));
-        kAward1OPLbl1.setText("0");
+        kAward3OPLbl.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        kAward3OPLbl.setForeground(new java.awt.Color(0, 51, 51));
+        kAward3OPLbl.setText("0");
 
-        clipSize1OPLbl1.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        clipSize1OPLbl1.setForeground(new java.awt.Color(0, 51, 51));
-        clipSize1OPLbl1.setText("0");
+        clipSize3OPLbl.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        clipSize3OPLbl.setForeground(new java.awt.Color(0, 51, 51));
+        clipSize3OPLbl.setText("0");
 
-        resAmmo1OPLbl1.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        resAmmo1OPLbl1.setForeground(new java.awt.Color(0, 51, 51));
-        resAmmo1OPLbl1.setText("0");
+        resAmmo3OPLbl.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        resAmmo3OPLbl.setForeground(new java.awt.Color(0, 51, 51));
+        resAmmo3OPLbl.setText("0");
 
-        wepList2CB1.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        wepList2CB1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Weapon 4" }));
-        wepList2CB1.addActionListener(new java.awt.event.ActionListener() {
+        wepList4CB.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
+        wepList4CB.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Weapon 4", "Nova", "P250", "MP7", "AK-47", "AUG", "SGG 553", "Negev" }));
+        wepList4CB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                wepList2CB1ActionPerformed(evt);
+                wepList4CBActionPerformed(evt);
             }
         });
 
-        class2OPLbl1.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        class2OPLbl1.setForeground(new java.awt.Color(0, 51, 51));
-        class2OPLbl1.setText("0");
+        class4OPLbl.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        class4OPLbl.setForeground(new java.awt.Color(0, 51, 51));
+        class4OPLbl.setText("0");
 
-        avgClass2OPLbl1.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        avgClass2OPLbl1.setForeground(new java.awt.Color(0, 51, 51));
-        avgClass2OPLbl1.setText("0");
+        avgClass4OPLbl.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        avgClass4OPLbl.setForeground(new java.awt.Color(0, 51, 51));
+        avgClass4OPLbl.setText("0");
 
-        wepDmg2OPLbl1.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        wepDmg2OPLbl1.setForeground(new java.awt.Color(0, 51, 51));
-        wepDmg2OPLbl1.setText("0");
+        wepDmg4OPLbl.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        wepDmg4OPLbl.setForeground(new java.awt.Color(0, 51, 51));
+        wepDmg4OPLbl.setText("0");
 
-        wepPrice2OPLbl1.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        wepPrice2OPLbl1.setForeground(new java.awt.Color(0, 51, 51));
-        wepPrice2OPLbl1.setText("0");
+        wepPrice4OPLbl.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        wepPrice4OPLbl.setForeground(new java.awt.Color(0, 51, 51));
+        wepPrice4OPLbl.setText("0");
 
-        kAward2OPLbl1.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        kAward2OPLbl1.setForeground(new java.awt.Color(0, 51, 51));
-        kAward2OPLbl1.setText("0");
+        kAward4OPLbl.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        kAward4OPLbl.setForeground(new java.awt.Color(0, 51, 51));
+        kAward4OPLbl.setText("0");
 
-        clipSize2OPLbl1.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        clipSize2OPLbl1.setForeground(new java.awt.Color(0, 51, 51));
-        clipSize2OPLbl1.setText("0");
+        clipSize4OPLbl.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        clipSize4OPLbl.setForeground(new java.awt.Color(0, 51, 51));
+        clipSize4OPLbl.setText("0");
 
-        resAmmo2OPLbl1.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        resAmmo2OPLbl1.setForeground(new java.awt.Color(0, 51, 51));
-        resAmmo2OPLbl1.setText("0");
+        resAmmo4OPLbl.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        resAmmo4OPLbl.setForeground(new java.awt.Color(0, 51, 51));
+        resAmmo4OPLbl.setText("0");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -292,24 +300,24 @@ public class culminatingTest extends javax.swing.JFrame {
                             .addComponent(cmprGunsLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                            .addComponent(kAward1OPLbl1)
-                            .addComponent(clipSize1OPLbl1)
-                            .addComponent(avgClass1OPLbl1)
-                            .addComponent(class1OPLbl1)
-                            .addComponent(resAmmo1OPLbl1)
-                            .addComponent(wepPrice1OPLbl1)
-                            .addComponent(wepDmg1OPLbl1)
-                            .addComponent(wepList1CB1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(kAward3OPLbl)
+                            .addComponent(clipSize3OPLbl)
+                            .addComponent(avgClass3OPLbl)
+                            .addComponent(class3OPLbl)
+                            .addComponent(resAmmo3OPLbl)
+                            .addComponent(wepPrice3OPLbl)
+                            .addComponent(wepDmg3OPLbl)
+                            .addComponent(wepList3CB, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                            .addComponent(wepList2CB1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(class2OPLbl1)
-                            .addComponent(avgClass2OPLbl1)
-                            .addComponent(wepDmg2OPLbl1)
-                            .addComponent(wepPrice2OPLbl1)
-                            .addComponent(kAward2OPLbl1)
-                            .addComponent(clipSize2OPLbl1)
-                            .addComponent(resAmmo2OPLbl1)))
+                            .addComponent(wepList4CB, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(class4OPLbl)
+                            .addComponent(avgClass4OPLbl)
+                            .addComponent(wepDmg4OPLbl)
+                            .addComponent(wepPrice4OPLbl)
+                            .addComponent(kAward4OPLbl)
+                            .addComponent(clipSize4OPLbl)
+                            .addComponent(resAmmo4OPLbl)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(271, 271, 271)
                         .addComponent(titleLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 378, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -358,37 +366,37 @@ public class culminatingTest extends javax.swing.JFrame {
                                                 .addComponent(resAmmoLbl))
                                             .addComponent(clipSizeLbl)))))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(wepList2CB1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(wepList4CB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(class2OPLbl1)
+                                .addComponent(class4OPLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(avgClass2OPLbl1)
+                                .addComponent(avgClass4OPLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(wepDmg2OPLbl1)
+                                .addComponent(wepDmg4OPLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(wepPrice2OPLbl1)
+                                .addComponent(wepPrice4OPLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(kAward2OPLbl1)
+                                .addComponent(kAward4OPLbl)
                                 .addGap(1, 1, 1)
-                                .addComponent(clipSize2OPLbl1)
+                                .addComponent(clipSize4OPLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(resAmmo2OPLbl1))
+                                .addComponent(resAmmo4OPLbl))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(wepList1CB1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(wepList3CB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(class1OPLbl1)
+                                .addComponent(class3OPLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(avgClass1OPLbl1)
+                                .addComponent(avgClass3OPLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(wepDmg1OPLbl1)
+                                .addComponent(wepDmg3OPLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(wepPrice1OPLbl1)
+                                .addComponent(wepPrice3OPLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(kAward1OPLbl1)
+                                .addComponent(kAward3OPLbl)
                                 .addGap(0, 0, 0)
-                                .addComponent(clipSize1OPLbl1)
+                                .addComponent(clipSize3OPLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(resAmmo1OPLbl1)))
+                                .addComponent(resAmmo3OPLbl)))
                         .addGap(18, 18, 18)
                         .addComponent(cmprGunsLbl))
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -433,13 +441,55 @@ public class culminatingTest extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_wepList2CBActionPerformed
 
-    private void wepList1CB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wepList1CB1ActionPerformed
+    private void wepList3CBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wepList3CBActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_wepList1CB1ActionPerformed
+    }//GEN-LAST:event_wepList3CBActionPerformed
 
-    private void wepList2CB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wepList2CB1ActionPerformed
+    private void wepList4CBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wepList4CBActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_wepList2CB1ActionPerformed
+    }//GEN-LAST:event_wepList4CBActionPerformed
+
+    private void cmprGunsLblActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmprGunsLblActionPerformed
+        String wep1 = (wepList1CB.getSelectedItem()).toString();
+        //classLbl12.setText(selectedItem);
+        String wep2 = (wepList2CB.getSelectedItem()).toString();
+        String wep3 = (wepList3CB.getSelectedItem()).toString();
+        String wep4 = (wepList4CB.getSelectedItem()).toString();
+        
+        try {
+        FileReader firstWep = new FileReader(wep1 + ".cs");
+            BufferedReader buffer1 = new BufferedReader(firstWep);
+            buffer1.close();
+            
+            } catch (IOException e) {
+            System.err.println("The file was not found.");
+        }
+        try {
+        FileReader secondWep = new FileReader(wep2 + ".cs");
+            BufferedReader buffer2 = new BufferedReader(secondWep);
+            buffer2.close();
+            
+            } catch (IOException e) {
+            System.err.println("The file was not found.");
+        }
+        try {
+        FileReader thirdWep = new FileReader(wep3 + ".cs");
+            BufferedReader buffer3 = new BufferedReader(thirdWep);
+            buffer3.close();
+            
+            } catch (IOException e) {
+            System.err.println("The file was not found.");
+        }
+        try {
+        FileReader fourthWep = new FileReader(wep4 + ".cs");
+            BufferedReader buffer4 = new BufferedReader(fourthWep);
+            buffer4.close();
+            
+            } catch (IOException e) {
+            System.err.println("The file was not found.");
+        }
+        
+    }//GEN-LAST:event_cmprGunsLblActionPerformed
 
     /**
      * @param args the command line arguments
@@ -478,44 +528,44 @@ public class culminatingTest extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel avgClass1OPLbl;
-    private javax.swing.JLabel avgClass1OPLbl1;
     private javax.swing.JLabel avgClass2OPLbl;
-    private javax.swing.JLabel avgClass2OPLbl1;
+    private javax.swing.JLabel avgClass3OPLbl;
+    private javax.swing.JLabel avgClass4OPLbl;
     private javax.swing.JLabel avgClassLbl;
     private javax.swing.JLabel class1OPLbl;
-    private javax.swing.JLabel class1OPLbl1;
     private javax.swing.JLabel class2OPLbl;
-    private javax.swing.JLabel class2OPLbl1;
+    private javax.swing.JLabel class3OPLbl;
+    private javax.swing.JLabel class4OPLbl;
     private javax.swing.JLabel classLbl;
     private javax.swing.JLabel clipSize1OPLbl;
-    private javax.swing.JLabel clipSize1OPLbl1;
     private javax.swing.JLabel clipSize2OPLbl;
-    private javax.swing.JLabel clipSize2OPLbl1;
+    private javax.swing.JLabel clipSize3OPLbl;
+    private javax.swing.JLabel clipSize4OPLbl;
     private javax.swing.JLabel clipSizeLbl;
     private javax.swing.JButton cmprGunsLbl;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel kAward1OPLbl;
-    private javax.swing.JLabel kAward1OPLbl1;
     private javax.swing.JLabel kAward2OPLbl;
-    private javax.swing.JLabel kAward2OPLbl1;
+    private javax.swing.JLabel kAward3OPLbl;
+    private javax.swing.JLabel kAward4OPLbl;
     private javax.swing.JLabel resAmmo1OPLbl;
-    private javax.swing.JLabel resAmmo1OPLbl1;
     private javax.swing.JLabel resAmmo2OPLbl;
-    private javax.swing.JLabel resAmmo2OPLbl1;
+    private javax.swing.JLabel resAmmo3OPLbl;
+    private javax.swing.JLabel resAmmo4OPLbl;
     private javax.swing.JLabel resAmmoLbl;
     private javax.swing.JLabel titleLbl;
     private javax.swing.JLabel wepDmg1OPLbl;
-    private javax.swing.JLabel wepDmg1OPLbl1;
     private javax.swing.JLabel wepDmg2OPLbl;
-    private javax.swing.JLabel wepDmg2OPLbl1;
+    private javax.swing.JLabel wepDmg3OPLbl;
+    private javax.swing.JLabel wepDmg4OPLbl;
     private javax.swing.JComboBox wepList1CB;
-    private javax.swing.JComboBox wepList1CB1;
     private javax.swing.JComboBox wepList2CB;
-    private javax.swing.JComboBox wepList2CB1;
+    private javax.swing.JComboBox wepList3CB;
+    private javax.swing.JComboBox wepList4CB;
     private javax.swing.JLabel wepPrice1OPLbl;
-    private javax.swing.JLabel wepPrice1OPLbl1;
     private javax.swing.JLabel wepPrice2OPLbl;
-    private javax.swing.JLabel wepPrice2OPLbl1;
+    private javax.swing.JLabel wepPrice3OPLbl;
+    private javax.swing.JLabel wepPrice4OPLbl;
     private javax.swing.JLabel wpnDmgLbl;
     private javax.swing.JLabel wpnKawardLbl;
     private javax.swing.JLabel wpnPriceLbl;
