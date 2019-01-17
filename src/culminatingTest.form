@@ -51,7 +51,7 @@
                               <Component id="kAward1OPLbl" alignment="2" min="-2" max="-2" attributes="0"/>
                               <Component id="clipSize1OPLbl" alignment="2" min="-2" max="-2" attributes="0"/>
                               <Component id="side1OPLbl" alignment="2" min="-2" max="-2" attributes="0"/>
-                              <Component id="class1OPLbl" alignment="2" min="-2" max="-2" attributes="0"/>
+                              <Component id="type1OPLbl" alignment="2" min="-2" max="-2" attributes="0"/>
                               <Component id="resAmmo1OPLbl" alignment="2" min="-2" max="-2" attributes="0"/>
                               <Component id="wepPrice1OPLbl" alignment="2" min="-2" max="-2" attributes="0"/>
                               <Component id="wepDmg1OPLbl" alignment="2" min="-2" max="-2" attributes="0"/>
@@ -60,7 +60,7 @@
                           <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="2" attributes="0">
                               <Component id="wepList2CB" alignment="2" min="-2" pref="150" max="-2" attributes="0"/>
-                              <Component id="class2OPLbl" alignment="2" min="-2" max="-2" attributes="0"/>
+                              <Component id="type2OPLbl" alignment="2" min="-2" max="-2" attributes="0"/>
                               <Component id="side2OPLbl" alignment="2" min="-2" max="-2" attributes="0"/>
                               <Component id="wepDmg2OPLbl" alignment="2" min="-2" max="-2" attributes="0"/>
                               <Component id="wepPrice2OPLbl" alignment="2" min="-2" max="-2" attributes="0"/>
@@ -70,8 +70,8 @@
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="2" attributes="0">
-                              <Component id="classLbl" alignment="2" min="-2" max="-2" attributes="0"/>
-                              <Component id="avgClassLbl" alignment="2" min="-2" max="-2" attributes="0"/>
+                              <Component id="typeLbl" alignment="2" min="-2" max="-2" attributes="0"/>
+                              <Component id="sideLbl" alignment="2" min="-2" max="-2" attributes="0"/>
                               <Component id="wpnDmgLbl" alignment="2" min="-2" max="-2" attributes="0"/>
                               <Component id="wpnPriceLbl" alignment="2" min="-2" max="-2" attributes="0"/>
                               <Component id="wpnKawardLbl" alignment="2" min="-2" max="-2" attributes="0"/>
@@ -84,7 +84,7 @@
                               <Component id="kAward3OPLbl" alignment="2" min="-2" max="-2" attributes="0"/>
                               <Component id="clipSize3OPLbl" alignment="2" min="-2" max="-2" attributes="0"/>
                               <Component id="side3OPLbl" alignment="2" min="-2" max="-2" attributes="0"/>
-                              <Component id="class3OPLbl" alignment="2" min="-2" max="-2" attributes="0"/>
+                              <Component id="type3OPLbl" alignment="2" min="-2" max="-2" attributes="0"/>
                               <Component id="resAmmo3OPLbl" alignment="2" min="-2" max="-2" attributes="0"/>
                               <Component id="wepPrice3OPLbl" alignment="2" min="-2" max="-2" attributes="0"/>
                               <Component id="wepDmg3OPLbl" alignment="2" min="-2" max="-2" attributes="0"/>
@@ -93,7 +93,7 @@
                           <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="2" attributes="0">
                               <Component id="wepList4CB" alignment="2" min="-2" pref="150" max="-2" attributes="0"/>
-                              <Component id="class4OPLbl" alignment="2" min="-2" max="-2" attributes="0"/>
+                              <Component id="type4OPLbl" alignment="2" min="-2" max="-2" attributes="0"/>
                               <Component id="side4OPLbl" alignment="2" min="-2" max="-2" attributes="0"/>
                               <Component id="wepDmg4OPLbl" alignment="2" min="-2" max="-2" attributes="0"/>
                               <Component id="wepPrice4OPLbl" alignment="2" min="-2" max="-2" attributes="0"/>
@@ -125,7 +125,7 @@
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" attributes="0">
-                                          <Component id="class2OPLbl" min="-2" max="-2" attributes="0"/>
+                                          <Component id="type2OPLbl" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Component id="side2OPLbl" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -140,9 +140,9 @@
                                           <Component id="resAmmo2OPLbl" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" attributes="0">
-                                          <Component id="classLbl" min="-2" max="-2" attributes="0"/>
+                                          <Component id="typeLbl" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="avgClassLbl" min="-2" max="-2" attributes="0"/>
+                                          <Component id="sideLbl" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Component id="wpnDmgLbl" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -162,7 +162,7 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="wepList4CB" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="class4OPLbl" min="-2" max="-2" attributes="0"/>
+                                  <Component id="type4OPLbl" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="side4OPLbl" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -179,7 +179,7 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="wepList3CB" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="class3OPLbl" min="-2" max="-2" attributes="0"/>
+                                  <Component id="type3OPLbl" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="side3OPLbl" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -201,7 +201,7 @@
                           <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
                           <Component id="wepList1CB" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="class1OPLbl" min="-2" max="-2" attributes="0"/>
+                          <Component id="type1OPLbl" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="side1OPLbl" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -233,7 +233,7 @@
             <Property name="text" type="java.lang.String" value="CS:GO Weapon Master"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="classLbl">
+        <Component class="javax.swing.JLabel" name="typeLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Verdana" size="18" style="1"/>
@@ -244,7 +244,7 @@
             <Property name="text" type="java.lang.String" value="Weapon type"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="avgClassLbl">
+        <Component class="javax.swing.JLabel" name="sideLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Verdana" size="18" style="1"/>
@@ -347,7 +347,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="wepList1CBActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="class1OPLbl">
+        <Component class="javax.swing.JLabel" name="type1OPLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Verdana" size="18" style="1"/>
@@ -447,7 +447,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="wepList2CBActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="class2OPLbl">
+        <Component class="javax.swing.JLabel" name="type2OPLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Verdana" size="18" style="1"/>
@@ -547,7 +547,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="wepList3CBActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="class3OPLbl">
+        <Component class="javax.swing.JLabel" name="type3OPLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Verdana" size="18" style="1"/>
@@ -647,7 +647,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="wepList4CBActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="class4OPLbl">
+        <Component class="javax.swing.JLabel" name="type4OPLbl">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Verdana" size="18" style="1"/>

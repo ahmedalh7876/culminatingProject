@@ -30,8 +30,8 @@ public class culminatingTest extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         titleLbl = new javax.swing.JLabel();
-        classLbl = new javax.swing.JLabel();
-        avgClassLbl = new javax.swing.JLabel();
+        typeLbl = new javax.swing.JLabel();
+        sideLbl = new javax.swing.JLabel();
         wpnDmgLbl = new javax.swing.JLabel();
         wpnPriceLbl = new javax.swing.JLabel();
         wpnKawardLbl = new javax.swing.JLabel();
@@ -39,7 +39,7 @@ public class culminatingTest extends javax.swing.JFrame {
         resAmmoLbl = new javax.swing.JLabel();
         cmprGunsBtn = new javax.swing.JButton();
         wepList1CB = new javax.swing.JComboBox();
-        class1OPLbl = new javax.swing.JLabel();
+        type1OPLbl = new javax.swing.JLabel();
         side1OPLbl = new javax.swing.JLabel();
         wepDmg1OPLbl = new javax.swing.JLabel();
         wepPrice1OPLbl = new javax.swing.JLabel();
@@ -47,7 +47,7 @@ public class culminatingTest extends javax.swing.JFrame {
         clipSize1OPLbl = new javax.swing.JLabel();
         resAmmo1OPLbl = new javax.swing.JLabel();
         wepList2CB = new javax.swing.JComboBox();
-        class2OPLbl = new javax.swing.JLabel();
+        type2OPLbl = new javax.swing.JLabel();
         side2OPLbl = new javax.swing.JLabel();
         wepDmg2OPLbl = new javax.swing.JLabel();
         wepPrice2OPLbl = new javax.swing.JLabel();
@@ -55,7 +55,7 @@ public class culminatingTest extends javax.swing.JFrame {
         clipSize2OPLbl = new javax.swing.JLabel();
         resAmmo2OPLbl = new javax.swing.JLabel();
         wepList3CB = new javax.swing.JComboBox();
-        class3OPLbl = new javax.swing.JLabel();
+        type3OPLbl = new javax.swing.JLabel();
         side3OPLbl = new javax.swing.JLabel();
         wepDmg3OPLbl = new javax.swing.JLabel();
         wepPrice3OPLbl = new javax.swing.JLabel();
@@ -63,7 +63,7 @@ public class culminatingTest extends javax.swing.JFrame {
         clipSize3OPLbl = new javax.swing.JLabel();
         resAmmo3OPLbl = new javax.swing.JLabel();
         wepList4CB = new javax.swing.JComboBox();
-        class4OPLbl = new javax.swing.JLabel();
+        type4OPLbl = new javax.swing.JLabel();
         side4OPLbl = new javax.swing.JLabel();
         wepDmg4OPLbl = new javax.swing.JLabel();
         wepPrice4OPLbl = new javax.swing.JLabel();
@@ -79,13 +79,13 @@ public class culminatingTest extends javax.swing.JFrame {
         titleLbl.setForeground(new java.awt.Color(0, 51, 51));
         titleLbl.setText("CS:GO Weapon Master");
 
-        classLbl.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        classLbl.setForeground(new java.awt.Color(0, 51, 51));
-        classLbl.setText("Weapon type");
+        typeLbl.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        typeLbl.setForeground(new java.awt.Color(0, 51, 51));
+        typeLbl.setText("Weapon type");
 
-        avgClassLbl.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        avgClassLbl.setForeground(new java.awt.Color(0, 51, 51));
-        avgClassLbl.setText("Usable on (CT/T)");
+        sideLbl.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        sideLbl.setForeground(new java.awt.Color(0, 51, 51));
+        sideLbl.setText("Usable on (CT/T)");
 
         wpnDmgLbl.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         wpnDmgLbl.setForeground(new java.awt.Color(0, 51, 51));
@@ -124,9 +124,9 @@ public class culminatingTest extends javax.swing.JFrame {
             }
         });
 
-        class1OPLbl.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        class1OPLbl.setForeground(new java.awt.Color(0, 51, 51));
-        class1OPLbl.setText("0");
+        type1OPLbl.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        type1OPLbl.setForeground(new java.awt.Color(0, 51, 51));
+        type1OPLbl.setText("0");
 
         side1OPLbl.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         side1OPLbl.setForeground(new java.awt.Color(0, 51, 51));
@@ -160,9 +160,9 @@ public class culminatingTest extends javax.swing.JFrame {
             }
         });
 
-        class2OPLbl.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        class2OPLbl.setForeground(new java.awt.Color(0, 51, 51));
-        class2OPLbl.setText("0");
+        type2OPLbl.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        type2OPLbl.setForeground(new java.awt.Color(0, 51, 51));
+        type2OPLbl.setText("0");
 
         side2OPLbl.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         side2OPLbl.setForeground(new java.awt.Color(0, 51, 51));
@@ -196,9 +196,9 @@ public class culminatingTest extends javax.swing.JFrame {
             }
         });
 
-        class3OPLbl.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        class3OPLbl.setForeground(new java.awt.Color(0, 51, 51));
-        class3OPLbl.setText("0");
+        type3OPLbl.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        type3OPLbl.setForeground(new java.awt.Color(0, 51, 51));
+        type3OPLbl.setText("0");
 
         side3OPLbl.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         side3OPLbl.setForeground(new java.awt.Color(0, 51, 51));
@@ -232,9 +232,9 @@ public class culminatingTest extends javax.swing.JFrame {
             }
         });
 
-        class4OPLbl.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
-        class4OPLbl.setForeground(new java.awt.Color(0, 51, 51));
-        class4OPLbl.setText("0");
+        type4OPLbl.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
+        type4OPLbl.setForeground(new java.awt.Color(0, 51, 51));
+        type4OPLbl.setText("0");
 
         side4OPLbl.setFont(new java.awt.Font("Verdana", 1, 18)); // NOI18N
         side4OPLbl.setForeground(new java.awt.Color(0, 51, 51));
@@ -272,7 +272,7 @@ public class culminatingTest extends javax.swing.JFrame {
                             .addComponent(kAward1OPLbl)
                             .addComponent(clipSize1OPLbl)
                             .addComponent(side1OPLbl)
-                            .addComponent(class1OPLbl)
+                            .addComponent(type1OPLbl)
                             .addComponent(resAmmo1OPLbl)
                             .addComponent(wepPrice1OPLbl)
                             .addComponent(wepDmg1OPLbl)
@@ -280,7 +280,7 @@ public class culminatingTest extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                             .addComponent(wepList2CB, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(class2OPLbl)
+                            .addComponent(type2OPLbl)
                             .addComponent(side2OPLbl)
                             .addComponent(wepDmg2OPLbl)
                             .addComponent(wepPrice2OPLbl)
@@ -289,8 +289,8 @@ public class culminatingTest extends javax.swing.JFrame {
                             .addComponent(resAmmo2OPLbl))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                            .addComponent(classLbl)
-                            .addComponent(avgClassLbl)
+                            .addComponent(typeLbl)
+                            .addComponent(sideLbl)
                             .addComponent(wpnDmgLbl)
                             .addComponent(wpnPriceLbl)
                             .addComponent(wpnKawardLbl)
@@ -302,7 +302,7 @@ public class culminatingTest extends javax.swing.JFrame {
                             .addComponent(kAward3OPLbl)
                             .addComponent(clipSize3OPLbl)
                             .addComponent(side3OPLbl)
-                            .addComponent(class3OPLbl)
+                            .addComponent(type3OPLbl)
                             .addComponent(resAmmo3OPLbl)
                             .addComponent(wepPrice3OPLbl)
                             .addComponent(wepDmg3OPLbl)
@@ -310,7 +310,7 @@ public class culminatingTest extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                             .addComponent(wepList4CB, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(class4OPLbl)
+                            .addComponent(type4OPLbl)
                             .addComponent(side4OPLbl)
                             .addComponent(wepDmg4OPLbl)
                             .addComponent(wepPrice4OPLbl)
@@ -336,7 +336,7 @@ public class culminatingTest extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(class2OPLbl)
+                                        .addComponent(type2OPLbl)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(side2OPLbl)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -350,9 +350,9 @@ public class culminatingTest extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(resAmmo2OPLbl))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(classLbl)
+                                        .addComponent(typeLbl)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(avgClassLbl)
+                                        .addComponent(sideLbl)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(wpnDmgLbl)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -367,7 +367,7 @@ public class culminatingTest extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(wepList4CB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(class4OPLbl)
+                                .addComponent(type4OPLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(side4OPLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -383,7 +383,7 @@ public class culminatingTest extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(wepList3CB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(class3OPLbl)
+                                .addComponent(type3OPLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(side3OPLbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -402,7 +402,7 @@ public class culminatingTest extends javax.swing.JFrame {
                         .addGap(60, 60, 60)
                         .addComponent(wepList1CB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(class1OPLbl)
+                        .addComponent(type1OPLbl)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(side1OPLbl)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -451,8 +451,11 @@ public class culminatingTest extends javax.swing.JFrame {
     private void cmprGunsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmprGunsBtnActionPerformed
         /* Create arrays for all possible outputs. All arrays have 8 elements because
          they're going to be used in parallelism */
-        String[] type = new String[8], side = new String[8];
-        int[] wpnDmg = new int[8], wpnPrice = new int[8], wpnKaward = new int[8], clipSize = new int[8], resAmmo = new int[8];
+        String[] type = new String[4], side = new String[4];
+        String ph;
+        int[] wpnDmg = new int[4], wpnPrice = new int[4], wpnKaward = new int[4], clipSize = new int[4], resAmmo = new int[4];
+        String[] wpn2Stats = new String[7];
+        int tempStats = 99;
 
         String wep1 = (wepList1CB.getSelectedItem()).toString();
         //classLbl12.setText(selectedItem);
@@ -463,37 +466,74 @@ public class culminatingTest extends javax.swing.JFrame {
         try {
             FileReader firstWep = new FileReader(wep1 + ".csp");
             BufferedReader buffer1 = new BufferedReader(firstWep);
+
+            //ph stands for placeholder, it should skip every other line
+            ph = buffer1.readLine();
+            type[0] = buffer1.readLine();
+            ph = buffer1.readLine();
+            side[0] = buffer1.readLine();
+
+            ph = buffer1.readLine();
+            wpnDmg[0] = Integer.parseInt(buffer1.readLine());
+            ph = buffer1.readLine();
+            wpnPrice[0] = Integer.parseInt(buffer1.readLine());
+            ph = buffer1.readLine();
+            wpnKaward[0] = Integer.parseInt(buffer1.readLine());
+            ph = buffer1.readLine();
+            clipSize[0] = Integer.parseInt(buffer1.readLine());
+            ph = buffer1.readLine();
+            resAmmo[0] = Integer.parseInt(buffer1.readLine());
             buffer1.close();
 
         } catch (IOException e) {
             System.err.println("The file for the " + wep1 + " was not found.");
         }
+
+        type1OPLbl.setText(type[0]);
+        side1OPLbl.setText(type[0]);
+        wepDmg1OPLbl.setText(type[0]);
+        wepPrice1OPLbl.setText("$" + type[0]);
+        kAward1OPLbl.setText("$" + type[0]);
+        clipSize1OPLbl.setText(type[0]);
+        resAmmo1OPLbl.setText(type[0]);
+
         try {
             FileReader secondWep = new FileReader(wep2 + ".csp");
             BufferedReader buffer2 = new BufferedReader(secondWep);
-            for (int i = 0; i < 8; i++) {
-                subject[i] = buffer.readLine();
-                /* I tried transferring this try statement to another method, but I couldn't get it to work
-                My attempt at using an external method is a comment under this method */
-                try {
-                mark[i] = Double.parseDouble(buffer.readLine());
+            for (int i = 0; i < 7; i++) {
+                if (i < 2) {
+                    wpn2Stats[i] = buffer2.readLine();
+                    wpn2Stats[i] = buffer2.readLine();
                 }
-                catch (NumberFormatException nfe) {
+
+                /* I tried transferring this try statement to another method, but I couldn't get it to work
+                 My attempt at using an external method is a comment under this method */
+                try {
+                    tempStats = Integer.parseInt(buffer2.readLine());
+                    tempStats = Integer.parseInt(buffer2.readLine());
+                } catch (NumberFormatException nfe) {
                     System.err.println("Please enter a valid input into the external file.\n");
                 }
-                //An if statement to add to the "average" mark of the first student
-                if (i < 4) {
-                    avgMark1 += mark[i];
-                //An if statement to add to the "average" mark of the second student
-                } else if (i < 8) {
-                    avgMark2 += mark[i];
+                if (i >= 2) {
+                    wpn2Stats[i] = Integer.toString(tempStats);
                 }
+
+                //An if statement to add to the "average" mark of the first student
+            }
             buffer2.close();
 
-        }
-        }catch (IOException e) {
+        } catch (IOException e) {
             System.err.println("The file for the " + wep2 + " was not found.");
         }
+
+        type2OPLbl.setText(type[0]);
+        side2OPLbl.setText(type[0]);
+        wepDmg2OPLbl.setText(type[0]);
+        wepPrice2OPLbl.setText("$" + type[0]);
+        kAward2OPLbl.setText("$" + type[0]);
+        clipSize2OPLbl.setText(type[0]);
+        resAmmo2OPLbl.setText(type[0]);
+
         try {
             FileReader thirdWep = new FileReader(wep3 + ".csp");
             BufferedReader buffer3 = new BufferedReader(thirdWep);
@@ -549,12 +589,6 @@ public class culminatingTest extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel avgClassLbl;
-    private javax.swing.JLabel class1OPLbl;
-    private javax.swing.JLabel class2OPLbl;
-    private javax.swing.JLabel class3OPLbl;
-    private javax.swing.JLabel class4OPLbl;
-    private javax.swing.JLabel classLbl;
     private javax.swing.JLabel clipSize1OPLbl;
     private javax.swing.JLabel clipSize2OPLbl;
     private javax.swing.JLabel clipSize3OPLbl;
@@ -575,7 +609,13 @@ public class culminatingTest extends javax.swing.JFrame {
     private javax.swing.JLabel side2OPLbl;
     private javax.swing.JLabel side3OPLbl;
     private javax.swing.JLabel side4OPLbl;
+    private javax.swing.JLabel sideLbl;
     private javax.swing.JLabel titleLbl;
+    private javax.swing.JLabel type1OPLbl;
+    private javax.swing.JLabel type2OPLbl;
+    private javax.swing.JLabel type3OPLbl;
+    private javax.swing.JLabel type4OPLbl;
+    private javax.swing.JLabel typeLbl;
     private javax.swing.JLabel wepDmg1OPLbl;
     private javax.swing.JLabel wepDmg2OPLbl;
     private javax.swing.JLabel wepDmg3OPLbl;
