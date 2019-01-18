@@ -463,8 +463,8 @@ public class culminatingTest extends javax.swing.JFrame {
         String wep3 = (wepList3CB.getSelectedItem()).toString();
         String wep4 = (wepList4CB.getSelectedItem()).toString();
 
-        try {
-            FileReader firstWep = new FileReader(wep1 + ".csp");
+        try { 
+           FileReader firstWep = new FileReader(wep1 + ".csp");
             BufferedReader buffer1 = new BufferedReader(firstWep);
 
             //ph stands for placeholder, it should skip every other line
@@ -489,67 +489,136 @@ public class culminatingTest extends javax.swing.JFrame {
             System.err.println("The file for the " + wep1 + " was not found.");
         }
 
-        type1OPLbl.setText(type[0]);
-        side1OPLbl.setText(type[0]);
-        wepDmg1OPLbl.setText(type[0]);
-        wepPrice1OPLbl.setText("$" + type[0]);
-        kAward1OPLbl.setText("$" + type[0]);
-        clipSize1OPLbl.setText(type[0]);
-        resAmmo1OPLbl.setText(type[0]);
+        if (!wep1.equals("Weapon 1")) {
+            type1OPLbl.setText(type[0]);
+            side1OPLbl.setText(side[0]);
+            wepDmg1OPLbl.setText("" + wpnDmg[0]);
+            wepPrice1OPLbl.setText("$" + wpnPrice[0]);
+            kAward1OPLbl.setText("$" + wpnKaward[0]);
+            clipSize1OPLbl.setText("" + clipSize[0]);
+            resAmmo1OPLbl.setText("" + resAmmo[0]);
+        } else {
+            type1OPLbl.setText("FNF");
+            side1OPLbl.setText("FNF");
+            wepDmg1OPLbl.setText("FNF");
+            wepPrice1OPLbl.setText("FNF");
+            kAward1OPLbl.setText("FNF");
+            clipSize1OPLbl.setText("FNF");
+            resAmmo1OPLbl.setText("FNF");
+        }
 
         try {
             FileReader secondWep = new FileReader(wep2 + ".csp");
             BufferedReader buffer2 = new BufferedReader(secondWep);
-            for (int i = 0; i < 7; i++) {
-                if (i < 2) {
-                    wpn2Stats[i] = buffer2.readLine();
-                    wpn2Stats[i] = buffer2.readLine();
-                }
 
-                /* I tried transferring this try statement to another method, but I couldn't get it to work
-                 My attempt at using an external method is a comment under this method */
-                try {
-                    tempStats = Integer.parseInt(buffer2.readLine());
-                    tempStats = Integer.parseInt(buffer2.readLine());
-                } catch (NumberFormatException nfe) {
-                    System.err.println("Please enter a valid input into the external file.\n");
-                }
-                if (i >= 2) {
-                    wpn2Stats[i] = Integer.toString(tempStats);
-                }
+            while (!wep2.equals("Weapon 2")) {
 
-                //An if statement to add to the "average" mark of the first student
             }
+
+            ph = buffer2.readLine();
+            type[1] = buffer2.readLine();
+            ph = buffer2.readLine();
+            side[1] = buffer2.readLine();
+
+            ph = buffer2.readLine();
+            wpnDmg[1] = Integer.parseInt(buffer2.readLine());
+            ph = buffer2.readLine();
+            wpnPrice[1] = Integer.parseInt(buffer2.readLine());
+            ph = buffer2.readLine();
+            wpnKaward[1] = Integer.parseInt(buffer2.readLine());
+            ph = buffer2.readLine();
+            clipSize[1] = Integer.parseInt(buffer2.readLine());
+            ph = buffer2.readLine();
+            resAmmo[1] = Integer.parseInt(buffer2.readLine());
             buffer2.close();
 
         } catch (IOException e) {
             System.err.println("The file for the " + wep2 + " was not found.");
         }
 
-        type2OPLbl.setText(type[0]);
-        side2OPLbl.setText(type[0]);
-        wepDmg2OPLbl.setText(type[0]);
-        wepPrice2OPLbl.setText("$" + type[0]);
-        kAward2OPLbl.setText("$" + type[0]);
-        clipSize2OPLbl.setText(type[0]);
-        resAmmo2OPLbl.setText(type[0]);
+        if (!wep2.equals("Weapon 2")) {
+            type2OPLbl.setText(type[1]);
+            side2OPLbl.setText(side[1]);
+            wepDmg2OPLbl.setText("" + wpnDmg[1]);
+            wepPrice2OPLbl.setText("$" + wpnPrice[1]);
+            kAward2OPLbl.setText("$" + wpnKaward[1]);
+            clipSize2OPLbl.setText("" + clipSize[1]);
+            resAmmo2OPLbl.setText("" + resAmmo[1]);
+        } else {
+            type2OPLbl.setText("FNF");
+            side2OPLbl.setText("FNF");
+            wepDmg2OPLbl.setText("FNF");
+            wepPrice2OPLbl.setText("FNF");
+            kAward2OPLbl.setText("FNF");
+            clipSize2OPLbl.setText("FNF");
+            resAmmo2OPLbl.setText("FNF");
+        }
 
         try {
             FileReader thirdWep = new FileReader(wep3 + ".csp");
             BufferedReader buffer3 = new BufferedReader(thirdWep);
+
+            ph = buffer3.readLine();
+            type[2] = buffer3.readLine();
+            ph = buffer3.readLine();
+            side[2] = buffer3.readLine();
+
+            ph = buffer3.readLine();
+            wpnDmg[2] = Integer.parseInt(buffer3.readLine());
+            ph = buffer3.readLine();
+            wpnPrice[2] = Integer.parseInt(buffer3.readLine());
+            ph = buffer3.readLine();
+            wpnKaward[2] = Integer.parseInt(buffer3.readLine());
+            ph = buffer3.readLine();
+            clipSize[2] = Integer.parseInt(buffer3.readLine());
+            ph = buffer3.readLine();
+            resAmmo[2] = Integer.parseInt(buffer3.readLine());
             buffer3.close();
 
         } catch (IOException e) {
             System.err.println("The file for the " + wep3 + " was not found.");
         }
+
+        type3OPLbl.setText(type[2]);
+        side3OPLbl.setText(side[2]);
+        wepDmg3OPLbl.setText("" + wpnDmg[2]);
+        wepPrice3OPLbl.setText("$" + wpnPrice[2]);
+        kAward3OPLbl.setText("$" + wpnKaward[2]);
+        clipSize3OPLbl.setText("" + clipSize[2]);
+        resAmmo3OPLbl.setText("" + resAmmo[2]);
+
         try {
             FileReader fourthWep = new FileReader(wep4 + ".csp");
             BufferedReader buffer4 = new BufferedReader(fourthWep);
+
+            ph = buffer4.readLine();
+            type[3] = buffer4.readLine();
+            ph = buffer4.readLine();
+            side[3] = buffer4.readLine();
+
+            ph = buffer4.readLine();
+            wpnDmg[3] = Integer.parseInt(buffer4.readLine());
+            ph = buffer4.readLine();
+            wpnPrice[3] = Integer.parseInt(buffer4.readLine());
+            ph = buffer4.readLine();
+            wpnKaward[3] = Integer.parseInt(buffer4.readLine());
+            ph = buffer4.readLine();
+            clipSize[3] = Integer.parseInt(buffer4.readLine());
+            ph = buffer4.readLine();
+            resAmmo[3] = Integer.parseInt(buffer4.readLine());
             buffer4.close();
 
         } catch (IOException e) {
             System.err.println("The file for the " + wep4 + " was not found.");
         }
+
+        type4OPLbl.setText(type[3]);
+        side4OPLbl.setText(side[3]);
+        wepDmg4OPLbl.setText("" + wpnDmg[3]);
+        wepPrice4OPLbl.setText("$" + wpnPrice[3]);
+        kAward4OPLbl.setText("$" + wpnKaward[3]);
+        clipSize4OPLbl.setText("" + clipSize[3]);
+        resAmmo4OPLbl.setText("" + resAmmo[3]);
 
     }//GEN-LAST:event_cmprGunsBtnActionPerformed
 
