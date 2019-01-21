@@ -455,7 +455,7 @@ public class culminatingTest extends javax.swing.JFrame {
         String ph;
         int[] wpnDmg = new int[4], wpnPrice = new int[4], wpnKaward = new int[4], clipSize = new int[4], resAmmo = new int[4];
         String[] wpn2Stats = new String[7];
-        int tempStats = 99;
+        int tempStats = 99, tempSort = 0;
 
         String wep1 = (wepList1CB.getSelectedItem()).toString();
         //classLbl12.setText(selectedItem);
@@ -463,8 +463,8 @@ public class culminatingTest extends javax.swing.JFrame {
         String wep3 = (wepList3CB.getSelectedItem()).toString();
         String wep4 = (wepList4CB.getSelectedItem()).toString();
 
-        try { 
-           FileReader firstWep = new FileReader(wep1 + ".csp");
+        try {
+            FileReader firstWep = new FileReader(wep1 + ".csp");
             BufferedReader buffer1 = new BufferedReader(firstWep);
 
             //ph stands for placeholder, it should skip every other line
@@ -486,18 +486,17 @@ public class culminatingTest extends javax.swing.JFrame {
             buffer1.close();
 
         } catch (IOException e) {
-            System.err.println("The file for the " + wep1 + " was not found.");
+            System.err.println("The file for the \"" + wep1 + "\" was not found.");
         }
 
-        if (!wep1.equals("Weapon 1")) {
-            type1OPLbl.setText(type[0]);
-            side1OPLbl.setText(side[0]);
-            wepDmg1OPLbl.setText("" + wpnDmg[0]);
-            wepPrice1OPLbl.setText("$" + wpnPrice[0]);
-            kAward1OPLbl.setText("$" + wpnKaward[0]);
-            clipSize1OPLbl.setText("" + clipSize[0]);
-            resAmmo1OPLbl.setText("" + resAmmo[0]);
-        } else {
+        type1OPLbl.setText(type[0]);
+        side1OPLbl.setText(side[0]);
+        wepDmg1OPLbl.setText("" + wpnDmg[0]);
+        wepPrice1OPLbl.setText("$" + wpnPrice[0]);
+        kAward1OPLbl.setText("$" + wpnKaward[0]);
+        clipSize1OPLbl.setText("" + clipSize[0]);
+        resAmmo1OPLbl.setText("" + resAmmo[0]);
+        if (wep1.equals("Weapon 1")) {
             type1OPLbl.setText("FNF");
             side1OPLbl.setText("FNF");
             wepDmg1OPLbl.setText("FNF");
@@ -506,14 +505,9 @@ public class culminatingTest extends javax.swing.JFrame {
             clipSize1OPLbl.setText("FNF");
             resAmmo1OPLbl.setText("FNF");
         }
-
         try {
             FileReader secondWep = new FileReader(wep2 + ".csp");
             BufferedReader buffer2 = new BufferedReader(secondWep);
-
-            while (!wep2.equals("Weapon 2")) {
-
-            }
 
             ph = buffer2.readLine();
             type[1] = buffer2.readLine();
@@ -533,18 +527,17 @@ public class culminatingTest extends javax.swing.JFrame {
             buffer2.close();
 
         } catch (IOException e) {
-            System.err.println("The file for the " + wep2 + " was not found.");
+            System.err.println("The file for the \"" + wep2 + "\" was not found.");
         }
 
-        if (!wep2.equals("Weapon 2")) {
-            type2OPLbl.setText(type[1]);
-            side2OPLbl.setText(side[1]);
-            wepDmg2OPLbl.setText("" + wpnDmg[1]);
-            wepPrice2OPLbl.setText("$" + wpnPrice[1]);
-            kAward2OPLbl.setText("$" + wpnKaward[1]);
-            clipSize2OPLbl.setText("" + clipSize[1]);
-            resAmmo2OPLbl.setText("" + resAmmo[1]);
-        } else {
+        type2OPLbl.setText(type[1]);
+        side2OPLbl.setText(side[1]);
+        wepDmg2OPLbl.setText("" + wpnDmg[1]);
+        wepPrice2OPLbl.setText("$" + wpnPrice[1]);
+        kAward2OPLbl.setText("$" + wpnKaward[1]);
+        clipSize2OPLbl.setText("" + clipSize[1]);
+        resAmmo2OPLbl.setText("" + resAmmo[1]);
+        if (wep2.equals("Weapon 2")) {
             type2OPLbl.setText("FNF");
             side2OPLbl.setText("FNF");
             wepDmg2OPLbl.setText("FNF");
@@ -576,7 +569,7 @@ public class culminatingTest extends javax.swing.JFrame {
             buffer3.close();
 
         } catch (IOException e) {
-            System.err.println("The file for the " + wep3 + " was not found.");
+            System.err.println("The file for the \"" + wep3 + "\" was not found.");
         }
 
         type3OPLbl.setText(type[2]);
@@ -586,6 +579,15 @@ public class culminatingTest extends javax.swing.JFrame {
         kAward3OPLbl.setText("$" + wpnKaward[2]);
         clipSize3OPLbl.setText("" + clipSize[2]);
         resAmmo3OPLbl.setText("" + resAmmo[2]);
+        if (wep3.equals("Weapon 3")) {
+            type3OPLbl.setText("FNF");
+            side3OPLbl.setText("FNF");
+            wepDmg3OPLbl.setText("FNF");
+            wepPrice3OPLbl.setText("FNF");
+            kAward3OPLbl.setText("FNF");
+            clipSize3OPLbl.setText("FNF");
+            resAmmo3OPLbl.setText("FNF");
+        }
 
         try {
             FileReader fourthWep = new FileReader(wep4 + ".csp");
@@ -609,7 +611,7 @@ public class culminatingTest extends javax.swing.JFrame {
             buffer4.close();
 
         } catch (IOException e) {
-            System.err.println("The file for the " + wep4 + " was not found.");
+            System.err.println("The file for the \"" + wep4 + "\" was not found.");
         }
 
         type4OPLbl.setText(type[3]);
@@ -619,6 +621,18 @@ public class culminatingTest extends javax.swing.JFrame {
         kAward4OPLbl.setText("$" + wpnKaward[3]);
         clipSize4OPLbl.setText("" + clipSize[3]);
         resAmmo4OPLbl.setText("" + resAmmo[3]);
+        if (wep4.equals("Weapon 4")) {
+            type4OPLbl.setText("FNF");
+            side4OPLbl.setText("FNF");
+            wepDmg4OPLbl.setText("FNF");
+            wepPrice4OPLbl.setText("FNF");
+            kAward4OPLbl.setText("FNF");
+            clipSize4OPLbl.setText("FNF");
+            resAmmo4OPLbl.setText("FNF");
+            
+            
+            
+        }
 
     }//GEN-LAST:event_cmprGunsBtnActionPerformed
 
