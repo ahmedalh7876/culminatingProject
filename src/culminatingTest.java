@@ -449,17 +449,15 @@ public class culminatingTest extends javax.swing.JFrame {
     }//GEN-LAST:event_wepList4CBActionPerformed
 
     private void cmprGunsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmprGunsBtnActionPerformed
-        /* Create arrays for all possible outputs. All arrays have 8 elements because
+        /* Create arrays for all possible outputs. All arrays have 4 elements because
          they're going to be used in parallelism */
         String[] type = new String[4], side = new String[4];
         String ph;
         int[] wpnDmg = new int[4], wpnPrice = new int[4], wpnKaward = new int[4], clipSize = new int[4], resAmmo = new int[4];
-        int[] dmgSort = new int[2], priceSort = new int[2], kawardSort = new int[2], clipSort = new int[2], resAmmoSort = new int[2];
-        String[] wpn2Stats = new String[7];
+        int[] dmgSort = new int[4], priceSort = new int[2], kawardSort = new int[2], clipSort = new int[2], resAmmoSort = new int[2];
         int tempStats = 99;
 
         String wep1 = (wepList1CB.getSelectedItem()).toString();
-        //classLbl12.setText(selectedItem);
         String wep2 = (wepList2CB.getSelectedItem()).toString();
         String wep3 = (wepList3CB.getSelectedItem()).toString();
         String wep4 = (wepList4CB.getSelectedItem()).toString();
@@ -486,29 +484,16 @@ public class culminatingTest extends javax.swing.JFrame {
             resAmmo[0] = Integer.parseInt(buffer1.readLine());
             buffer1.close();
 
+            type1OPLbl.setText(type[0]);
+            side1OPLbl.setText(side[0]);
+            wepDmg1OPLbl.setText("" + wpnDmg[0]);
+            wepPrice1OPLbl.setText("$" + wpnPrice[0]);
+            kAward1OPLbl.setText("$" + wpnKaward[0]);
+            clipSize1OPLbl.setText("" + clipSize[0]);
+            resAmmo1OPLbl.setText("" + resAmmo[0]);
+
         } catch (IOException e) {
             System.err.println("The file for the \"" + wep1 + "\" was not found.");
-        }
-
-        switch (wep1) {
-            case "Weapon 1":
-                type1OPLbl.setText("FNF");
-                side1OPLbl.setText("FNF");
-                wepDmg1OPLbl.setText("FNF");
-                wepPrice1OPLbl.setText("FNF");
-                kAward1OPLbl.setText("FNF");
-                clipSize1OPLbl.setText("FNF");
-                resAmmo1OPLbl.setText("FNF");
-                break;
-            default:
-                type1OPLbl.setText(type[0]);
-                side1OPLbl.setText(side[0]);
-                wepDmg1OPLbl.setText("" + wpnDmg[0]);
-                wepPrice1OPLbl.setText("$" + wpnPrice[0]);
-                kAward1OPLbl.setText("$" + wpnKaward[0]);
-                clipSize1OPLbl.setText("" + clipSize[0]);
-                resAmmo1OPLbl.setText("" + resAmmo[0]);
-                break;
         }
 
         try {
@@ -532,29 +517,16 @@ public class culminatingTest extends javax.swing.JFrame {
             resAmmo[1] = Integer.parseInt(buffer2.readLine());
             buffer2.close();
 
+            type2OPLbl.setText(type[1]);
+            side2OPLbl.setText(side[1]);
+            wepDmg2OPLbl.setText("" + wpnDmg[1]);
+            wepPrice2OPLbl.setText("$" + wpnPrice[1]);
+            kAward2OPLbl.setText("$" + wpnKaward[1]);
+            clipSize2OPLbl.setText("" + clipSize[1]);
+            resAmmo2OPLbl.setText("" + resAmmo[1]);
+
         } catch (IOException e) {
             System.err.println("The file for the \"" + wep2 + "\" was not found.");
-        }
-
-        switch (wep2) {
-            case "Weapon 2":
-                type2OPLbl.setText("FNF");
-                side2OPLbl.setText("FNF");
-                wepDmg2OPLbl.setText("FNF");
-                wepPrice2OPLbl.setText("FNF");
-                kAward2OPLbl.setText("FNF");
-                clipSize2OPLbl.setText("FNF");
-                resAmmo2OPLbl.setText("FNF");
-                break;
-            default:
-                type2OPLbl.setText(type[1]);
-                side2OPLbl.setText(side[1]);
-                wepDmg2OPLbl.setText("" + wpnDmg[1]);
-                wepPrice2OPLbl.setText("$" + wpnPrice[1]);
-                kAward2OPLbl.setText("$" + wpnKaward[1]);
-                clipSize2OPLbl.setText("" + clipSize[1]);
-                resAmmo2OPLbl.setText("" + resAmmo[1]);
-                break;
         }
 
         try {
@@ -578,29 +550,16 @@ public class culminatingTest extends javax.swing.JFrame {
             resAmmo[2] = Integer.parseInt(buffer3.readLine());
             buffer3.close();
 
+            type3OPLbl.setText(type[2]);
+            side3OPLbl.setText(side[2]);
+            wepDmg3OPLbl.setText("" + wpnDmg[2]);
+            wepPrice3OPLbl.setText("$" + wpnPrice[2]);
+            kAward3OPLbl.setText("$" + wpnKaward[2]);
+            clipSize3OPLbl.setText("" + clipSize[2]);
+            resAmmo3OPLbl.setText("" + resAmmo[2]);
+
         } catch (IOException e) {
             System.err.println("The file for the \"" + wep3 + "\" was not found.");
-        }
-
-        switch (wep3) {
-            case "Weapon 3":
-                type3OPLbl.setText("FNF");
-                side3OPLbl.setText("FNF");
-                wepDmg3OPLbl.setText("FNF");
-                wepPrice3OPLbl.setText("FNF");
-                kAward3OPLbl.setText("FNF");
-                clipSize3OPLbl.setText("FNF");
-                resAmmo3OPLbl.setText("FNF");
-                break;
-            default:
-                type3OPLbl.setText(type[2]);
-                side3OPLbl.setText(side[2]);
-                wepDmg3OPLbl.setText("" + wpnDmg[2]);
-                wepPrice3OPLbl.setText("$" + wpnPrice[2]);
-                kAward3OPLbl.setText("$" + wpnKaward[2]);
-                clipSize3OPLbl.setText("" + clipSize[2]);
-                resAmmo3OPLbl.setText("" + resAmmo[2]);
-                break;
         }
 
         try {
@@ -624,32 +583,30 @@ public class culminatingTest extends javax.swing.JFrame {
             resAmmo[3] = Integer.parseInt(buffer4.readLine());
             buffer4.close();
 
+            type4OPLbl.setText(type[3]);
+            side4OPLbl.setText(side[3]);
+            wepDmg4OPLbl.setText("" + wpnDmg[3]);
+            wepPrice4OPLbl.setText("$" + wpnPrice[3]);
+            kAward4OPLbl.setText("$" + wpnKaward[3]);
+            clipSize4OPLbl.setText("" + clipSize[3]);
+            resAmmo4OPLbl.setText("" + resAmmo[3]);
+
         } catch (IOException e) {
             System.err.println("The file for the \"" + wep4 + "\" was not found.");
         }
-
-        switch (wep4) {
-            case "Weapon 4":
-                type4OPLbl.setText("FNF");
-                side4OPLbl.setText("FNF");
-                wepDmg4OPLbl.setText("FNF");
-                wepPrice4OPLbl.setText("FNF");
-                kAward4OPLbl.setText("FNF");
-                clipSize4OPLbl.setText("FNF");
-                resAmmo4OPLbl.setText("FNF");
-                break;
-            default:
-                type4OPLbl.setText(type[3]);
-                side4OPLbl.setText(side[3]);
-                wepDmg4OPLbl.setText("" + wpnDmg[3]);
-                wepPrice4OPLbl.setText("$" + wpnPrice[3]);
-                kAward4OPLbl.setText("$" + wpnKaward[3]);
-                clipSize4OPLbl.setText("" + clipSize[3]);
-                resAmmo4OPLbl.setText("" + resAmmo[3]);
-                break;
-        }
-
-
+        
+        dmgSort[0] = 14;
+        dmgSort[1] = 2;
+        dmgSort[2] = 12;
+        dmgSort[3] = 11;
+        System.out.println(""+sort(dmgSort));
+        
+//        dmgSort[0] = 14;
+//        dmgSort[1] = 2;
+//        dmgSort[2] = 12;
+//        dmgSort[3] = 11;
+//        System.out.println(""+sort(dmgSort));
+        
     }//GEN-LAST:event_cmprGunsBtnActionPerformed
 
     /**
@@ -666,16 +623,24 @@ public class culminatingTest extends javax.swing.JFrame {
                 if ("Nimbus".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
+
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(culminatingTest.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(culminatingTest.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(culminatingTest.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(culminatingTest.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(culminatingTest.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(culminatingTest.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(culminatingTest.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(culminatingTest.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
@@ -685,6 +650,20 @@ public class culminatingTest extends javax.swing.JFrame {
                 new culminatingTest().setVisible(true);
             }
         });
+    }
+
+    public static int sort(int stat[]) {
+        int temp;
+        for (int numOfPasses = 1; numOfPasses < (stat.length); numOfPasses++) {
+            for (int i = 0; i <= (stat.length) - 2; i++) {
+                if (stat[i] > stat[i + 1]) {
+                    temp = stat[i + 1];
+                    stat[i + 1] = stat[i];
+                    stat[i] = temp;
+                }
+            }
+        }
+        return stat[stat.length-1 ];
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
