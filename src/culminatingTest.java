@@ -449,18 +449,13 @@ public class culminatingTest extends javax.swing.JFrame {
     }//GEN-LAST:event_wepList4CBActionPerformed
 
     private void cmprGunsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmprGunsBtnActionPerformed
-        /* Create arrays for all possible outputs. All arrays have 4 elements because
-         they're going to be used in parallelism */
-        String[] type = new String[4], side = new String[4];
-        String ph;
-        int[] wpnDmg = new int[4], wpnPrice = new int[4], wpnKaward = new int[4], clipSize = new int[4], resAmmo = new int[4];
-        int[] dmgSort = new int[4], priceSort = new int[2], kawardSort = new int[2], clipSort = new int[2], resAmmoSort = new int[2];
-        int tempStats = 99;
 
-        String wep1 = (wepList1CB.getSelectedItem()).toString();
-        String wep2 = (wepList2CB.getSelectedItem()).toString();
-        String wep3 = (wepList3CB.getSelectedItem()).toString();
-        String wep4 = (wepList4CB.getSelectedItem()).toString();
+        /* Create arrays for all possible outputs. All arrays have
+         4 elements because they're going to be used in parallelism */
+        String[] type = new String[4], side = new String[4], wepSort = new String[4];
+        int[] wpnDmg = new int[4], wpnPrice = new int[4], wpnKaward = new int[4], clipSize = new int[4], resAmmo = new int[4];
+        int[] dmgSort = new int[4], priceSort = new int[4], kawardSort = new int[4], clipSort = new int[4], resAmmoSort = new int[4];
+        String ph, wep1 = (wepList1CB.getSelectedItem()).toString(), wep2 = (wepList2CB.getSelectedItem()).toString(), wep3 = (wepList3CB.getSelectedItem()).toString(), wep4 = (wepList4CB.getSelectedItem()).toString();
 
         try {
             FileReader firstWep = new FileReader(wep1 + ".csp");
@@ -494,6 +489,14 @@ public class culminatingTest extends javax.swing.JFrame {
 
         } catch (IOException e) {
             System.err.println("The file for the \"" + wep1 + "\" was not found.");
+
+            type1OPLbl.setText("FNF");
+            side1OPLbl.setText("FNF");
+            wepDmg1OPLbl.setText("FNF");
+            wepPrice1OPLbl.setText("FNF");
+            kAward1OPLbl.setText("FNF");
+            clipSize1OPLbl.setText("FNF");
+            resAmmo1OPLbl.setText("FNF");
         }
 
         try {
@@ -527,6 +530,14 @@ public class culminatingTest extends javax.swing.JFrame {
 
         } catch (IOException e) {
             System.err.println("The file for the \"" + wep2 + "\" was not found.");
+
+            type1OPLbl.setText("FNF");
+            side1OPLbl.setText("FNF");
+            wepDmg1OPLbl.setText("FNF");
+            wepPrice1OPLbl.setText("FNF");
+            kAward1OPLbl.setText("FNF");
+            clipSize1OPLbl.setText("FNF");
+            resAmmo1OPLbl.setText("FNF");
         }
 
         try {
@@ -560,6 +571,14 @@ public class culminatingTest extends javax.swing.JFrame {
 
         } catch (IOException e) {
             System.err.println("The file for the \"" + wep3 + "\" was not found.");
+
+            type1OPLbl.setText("FNF");
+            side1OPLbl.setText("FNF");
+            wepDmg1OPLbl.setText("FNF");
+            wepPrice1OPLbl.setText("FNF");
+            kAward1OPLbl.setText("FNF");
+            clipSize1OPLbl.setText("FNF");
+            resAmmo1OPLbl.setText("FNF");
         }
 
         try {
@@ -593,20 +612,23 @@ public class culminatingTest extends javax.swing.JFrame {
 
         } catch (IOException e) {
             System.err.println("The file for the \"" + wep4 + "\" was not found.");
+
+            //Displays this when file not found therefore it's in catch statement
+            type1OPLbl.setText("FNF");
+            side1OPLbl.setText("FNF");
+            wepDmg1OPLbl.setText("FNF");
+            wepPrice1OPLbl.setText("FNF");
+            kAward1OPLbl.setText("FNF");
+            clipSize1OPLbl.setText("FNF");
+            resAmmo1OPLbl.setText("FNF");
         }
-        
-        dmgSort[0] = 14;
-        dmgSort[1] = 2;
-        dmgSort[2] = 12;
-        dmgSort[3] = 11;
-        System.out.println(""+sort(dmgSort));
-        
+
 //        dmgSort[0] = 14;
 //        dmgSort[1] = 2;
 //        dmgSort[2] = 12;
 //        dmgSort[3] = 11;
 //        System.out.println(""+sort(dmgSort));
-        
+
     }//GEN-LAST:event_cmprGunsBtnActionPerformed
 
     /**
@@ -652,10 +674,12 @@ public class culminatingTest extends javax.swing.JFrame {
         });
     }
 
+    //Add other parallel arrays as accepted parameter
     public static int sort(int stat[]) {
         int temp;
         for (int numOfPasses = 1; numOfPasses < (stat.length); numOfPasses++) {
             for (int i = 0; i <= (stat.length) - 2; i++) {
+                //Add other parallel arrays to do the same thing. if stat1>stat2, stat2 and 1 swap, secondStat2 and secondStat1 swap too
                 if (stat[i] > stat[i + 1]) {
                     temp = stat[i + 1];
                     stat[i + 1] = stat[i];
@@ -663,7 +687,7 @@ public class culminatingTest extends javax.swing.JFrame {
                 }
             }
         }
-        return stat[stat.length-1 ];
+        return stat[stat.length - 1];
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
